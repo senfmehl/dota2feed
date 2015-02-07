@@ -1,0 +1,10 @@
+%h1 Create New Player
+
+= form_for :player, :url  => {:controller  => 'players', :action => 'create' } do |p|
+	= p.label :player_name, 'Player Name', :class => 'player'
+	= p.text_field :player_name
+	%br
+	= p.label :steam_account_id, 'Steam Account ID', :class => 'player'
+	= p.number_field :steam_account_id
+	%br
+	= p.submit "Submit"

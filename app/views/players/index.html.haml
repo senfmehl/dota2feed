@@ -1,0 +1,5 @@
+.maincontent
+	- @players.each do |p|
+		%strong= p.player_name
+		%strong= p.steam_account_id
+		%br
